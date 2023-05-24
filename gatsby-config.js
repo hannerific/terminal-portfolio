@@ -4,13 +4,13 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Krzysztof Pantak Portfolio`,
-    titleTemplate: `%s | Krzysztof Pantak Portfolio`,
-    description: `Terminal -command-line themed portfolio featuring projects ranging from robust Gatsby PWA's, React APPs and FullStack Web APPs utilizing cloud platforms to simple HTML, CSS and JavaScript sites.`,
-    author: `@KrzysztofPantak`,
-    url: "https://pantak.net",
+    title: `Portfolio - @hannerific`,
+    titleTemplate: `%s | Portfolio - @hannerific`,
+    description: `Personal Portfolio {DevOps, Prompt, Backend}`,
+    author: `@hannerific`,
+    url: "http://hannerific.io/",
     image: "/PortfolioSS-sm.png", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@KrzysztofPantak",
+    twitterUsername: "@hkxnyc",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,8 +27,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Krzysztof Pantak Portfolio`,
-        short_name: `Krzysztof Pantak Portfolio`,
+        name: `Portfolio - @hannerific`,
+        short_name: `Portfolio - @hannerific`,
         start_url: `/`,
         background_color: `#1b2d3a`,
         theme_color: `#1b2d3a`,
@@ -50,15 +50,15 @@ module.exports = {
         path: `${__dirname}/src/markdown-pages/projects`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          process.env.GATSBY_GOOGLE_GTAG, // Google Analytics / GA
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-gtag`,
+    //   options: {
+    //     // You can add multiple tracking ids and a pageview event will be fired for all of them.
+    //     trackingIds: [
+    //       process.env.GATSBY_GOOGLE_GTAG, // Google Analytics / GA
+    //     ],
+    //   },
+    // },
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-gatsby-cloud`,
